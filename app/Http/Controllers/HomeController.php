@@ -42,8 +42,8 @@ class HomeController extends Controller
      */
     public function index()
     {
-        $news = News::skip(0)->take(6)->get();
-        $galleries = Gallery::skip(0)->take(6)->get();
+        $news = News::orderBy('id', 'desc')->skip(0)->take(6)->get();
+        $galleries = Gallery::orderBy('id', 'desc')->skip(0)->take(6)->get();
         return view('home', compact('galleries', 'news'));
     }
 
