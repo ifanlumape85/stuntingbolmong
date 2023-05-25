@@ -21,7 +21,13 @@
                     <a href="/" class="nav-link">Beranda</a>
                 </li>
                 <li class="nav-item">
-                    <a href="{{ route('dashboard-stunting') }}" class="nav-link">Dashboard Stunting</a>
+                    <a href="{{ route('dashboard-stunting') }}" class="nav-link">Stunting</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/news" class="nav-link">News</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/gallery" class="nav-link">Gallery</a>
                 </li>
                 <!-- Messages Dropdown Menu -->
                 <li class="nav-item">

@@ -44,7 +44,7 @@ class HomeController extends Controller
     {
         $news = News::skip(0)->take(6)->get();
         $galleries = Gallery::skip(0)->take(6)->get();
-        return view('home', compact('galleries'));
+        return view('home', compact('galleries', 'news'));
     }
 
     public function dashboard()
@@ -58,5 +58,22 @@ class HomeController extends Controller
 
         $puskesmas = Puskesmas::all();
         return view('stunting', compact('puskesmas'));
+    }
+
+    public function news()
+    {
+        $items = News::orderBy('id', 'desc')->paginate(10);
+        return view('news', compact('items'));
+    }
+    public function gallery()
+    {
+        $items = Gallery::orderBy('id', 'desc')->paginate(10);
+        return view('gallery', compact('items'));
+    }
+
+    public function detailNews($slug)
+    {
+        $item = News::where('slug', $slug)->first();
+        return view('detailnews', compact('item'));
     }
 }

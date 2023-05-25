@@ -102,25 +102,50 @@
                 <p class="text-center text-dark text-break text-lg">Komitmen politis dan kebijakan pelaksanaan aksi kebutuhan dan tekanan untuk implementasi, tata kelola keterlibatan antar lembaga pemerintah dan non-pemerintah, kapasitas untuk implementasi.</p>
                 <p>&nbsp;</p>
                 <p>&nbsp;</p>
-                <p>&nbsp;</p>
             </div>
         </div>
     </div>
 </section>
 <section>
     <div class="container">
-        <h1 class="h2 text-dark text-bold text-center">Gallery</h1>
+        <h1 class="h2 text-dark text-bold text-center"><a href="/news" class="text-bold text-dark">News</a></h1>
+        <div class="row mt-4 mb-2">
+            @foreach($news as $item)
+            <div class="col-md-6">
+
+                <div class="card card-widget">
+                <div class="card-header">
+                    <span class="username"><a href="/news/{{ $item->slug ?? null }}" class="text-bold text-danger">{{ Str::limit($item->name, 55) ?? null }}</a></span>
+                    <p class="text-sm text-secondary">{{ $item->created_at ?? null }}</p>
+                </div>
+                
+                <div class="card-body">
+                <img class="img-fluid pad" src="{{ Storage::url($item->image) }}" alt="Photo">
+                </div>
+                
+                </div>
+                
+                </div>
+            @endforeach
+        </div>
+    </div>
+</section>
+<section>
+    <div class="container">
+        <h1 class="h2 text-dark text-bold text-center"><a href="/gallery" class="text-bold text-dark">Gallery</a></h1>
         <div class="row mt-4 mb-2">
             @foreach($galleries as $item)
             <div class="col-md-12 col-lg-6 col-xl-4">
+                <a href="{{ Storage::url($item->image) }}" target="_blank" class="text-white">
                 <div class="card mb-2 bg-gradient-dark">
                     <img style="object-positon:center; object-fit:cover; width:100%; height:250px;" class="card-img-top" src="{{ Storage::url($item->image) }}" alt="Dist Photo 1">
                     <div class="card-img-overlay d-flex flex-column justify-content-end">
                         <h5 class="card-title text-primary text-white">{{ $item->title ?? null }}</h5>
-                        <p class="card-text text-white pb-2 pt-1">{{ $item->description ?? null }}</p>
-                        <a href="#" class="text-white">{{ $item->created_at ?? null }}</a>
+                        {{ $item->created_at ?? null }}
+                    
                     </div>
                 </div>
+            </a>
             </div>
             @endforeach
         </div>

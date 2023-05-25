@@ -35,6 +35,9 @@ Auth::routes();
 
 Route::get('/', [HomeController::class, 'index'])->name('home');
 Route::get('/dashboard', [HomeController::class, 'dashboard'])->name('dashboard-stunting');
+Route::get('/news', [HomeController::class, 'news'])->name('news');
+Route::get('/gallery', [HomeController::class, 'gallery'])->name('gallery');
+Route::get('/news/{slug}', [HomeController::class, 'detailNews'])->name('detail-news');
 Route::get('/down', function () {
     Artisan::call('down');
 });
