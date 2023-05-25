@@ -6,7 +6,7 @@
             <div class="col">
                 <div class="d-flex flex-column justify-content-center align-items-center" style="height: 300px;">
                     <h1 class="text-bold text-center h1">Dashboard Pemantauan Terpadu</h1>
-                    <p class="h2"><a href="/" class="text-success">Percepatan Pencegahan Stunting</p>
+                    <p class="h2"><a href="/dashbaord" class="text-success">Percepatan Pencegahan Stunting</a></p>
                 </div>
             </div>
         </div>

@@ -12,7 +12,7 @@
         });
 
         var id_propinsi = '{{ $item->kecamatan->kabupaten->propinsi->id ?? null }}';
-        alert(id_propinsi);
+        // alert(id_propinsi);
         $('[name=id_propinsi]').val(id_propinsi).change();
         var id_kabupaten = '{{ $item->kecamatan->kabupaten->id ?? null }}';
         var id_kecamatan = '{{ $item->kecamatan->id ?? null }}';

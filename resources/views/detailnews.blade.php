@@ -6,7 +6,7 @@
             <div class="col">
                 <div class="d-flex flex-column justify-content-center align-items-center" style="height: 300px;">
                     <h1 class="text-bold text-center h1">News</h1>
-                    <p class="h2"><a href="/news/{{ $item->slug ?? null }}" class="text-bold text-dark">{{ $item->name ?? null }}</p>
+                    <p class="h2"><a href="/news/{{ $item->slug ?? null }}" class="text-bold text-dark">{{ $item->name ?? null }}</a></p>
                 </div>
             </div>
         </div>
