@@ -120,7 +120,7 @@
                 </div>
                 
                 <div class="card-body">
-                <img class="img-fluid pad" src="{{ Storage::url($item->image) }}" alt="Photo">
+                <img class="img-fluid pad" style="object-positon:center; object-fit:cover; width:100%; height:250px;"  src="{{ Storage::url($item->image) }}" alt="Photo">
                 </div>
                 
                 </div>
