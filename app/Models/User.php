@@ -59,4 +59,10 @@ class User extends Authenticatable
     {
         return $this->belongsToMany(Puskesmas::class, 'puskesmas_user', 'id_user', 'id_puskesmas');
     }
+
+
+    public function news()
+    {
+        return $this->hasMany(News::class, 'users_id', 'id');
+    }
 }
