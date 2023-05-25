@@ -39,11 +39,11 @@
                 <p>&nbsp;</p>
                 <h1 class="h1 text-dark text-bold">PERCEPATAN PENURUNAN STUNTING</h1>
                 <p>&nbsp;</p>
-                <img src="/Screenshot 2023-05-25 at 19.47.54.png" class="img-circle img-lg" />
+                {{-- <img src="/Screenshot 2023-05-25 at 19.47.54.png" class="img-circle img-lg" /> --}}
                 <p class="text-center text-dark text-break  text-lg">Percepatan penurunan stunting pada Balita adalah program prioritas Pemerintah sebagaimana termaktub dalam RPJMN 2020-2024. Target nasional pada tahun 2024, prevalensi stunting turun hingga 14%. Wakil Presiden RI sebagai Ketua Pengarah Tim Percepatan Penurunan Stunting (TP2S) Pusat bertugas memberikan arahan terkait penetapan kebijakan penyelenggaraan Percepatan Penurunan Stunting; serta memberikan pertimbangan, saran, dan rekomendasi dalam penyelesaian kendala dan hambatan penyelenggaraan Percepatan Penurunan Stunting secara efektif, konvergen, dan terintegrasi dengan melibatkan lintas sektor di tingkat pusat dan daerah.</p>
                 <p>&nbsp;</p>
-                <p class="text-bold">Julin Esther Papuling, SKM, ME</p>
-                <p class="text-secondary">Kepala Dinas Kesehatan</p>
+                {{-- <p class="text-bold">Julin Esther Papuling, SKM, ME</p> --}}
+                {{-- <p class="text-secondary">Kepala Dinas Kesehatan</p> --}}
 
             </div>
         </div>
